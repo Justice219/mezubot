@@ -126,15 +126,15 @@ npm run start
 
 ### Required Supabase Tables
 
-1. \`config\`
-\```sql
+1. config
+```sql
 - guild_id (text)
 - key (text)
 - value (text)
-\```
+```
 
-2. \`tickets\`
-\```sql
+2. tickets
+```sql
 - id (uuid)
 - guild_id (text)
 - channel_id (text)
@@ -146,42 +146,42 @@ npm run start
 - claimed_at (timestamp)
 - closed_by (text)
 - closed_at (timestamp)
-\```
+```
 
-3. \`ticket_metrics\`
-\```sql
+3. ticket_metrics
+```sql
 - ticket_id (uuid)
 - type (text)
 - response_time (int)
 - created_at (timestamp)
 - claimed_at (timestamp)
-\```
+```
 
-4. \`payment_metrics\`
-\```sql
+4. payment_metrics
+```sql
 - payment_id (text)
 - status (text)
 - amount (float)
 - timestamp (timestamp)
-\```
+```
 
-5. \`event_metrics\`
-\```sql
+5. event_metrics
+```sql
 - event_id (text)
 - total_invited (int)
 - total_rsvp (int)
 - actual_attendance (int)
 - timestamp (timestamp)
-\```
+```
 
-6. \`social_metrics\`
-\```sql
+social_metrics
+```sql
 - post_id (text)
 - platform (text)
 - clicks (int)
 - impressions (int)
 - timestamp (timestamp)
-\```
+```
 
 ## Contributing
 
